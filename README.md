@@ -4,6 +4,8 @@
 
 Built for the **Agents League Hackathon 2026** hosted by Microsoft.
 
+![ResearchMind Home](assets/main.png)
+
 ---
 
 ## 🎯 What It Does
@@ -15,11 +17,13 @@ ResearchMind takes any complex question and:
 3. **Detects conflicts** — identifies where sources agree or disagree
 4. **Synthesizes** a final cited answer with a confidence rating
 
+![ResearchMind Report](assets/report.png)
+
 ---
 
 ## 🏗️ Architecture
 
-```
+\`\`\`
 User Question
       ↓
 React Frontend (localhost:5173)
@@ -31,7 +35,7 @@ Microsoft Azure AI Foundry (Responses API)
 Foundry IQ — Web Search Grounding (Bing)
       ↓
 Cited, structured research report
-```
+\`\`\`
 
 ---
 
@@ -63,39 +67,39 @@ Cited, structured research report
 ### Prerequisites
 - Node.js 18+
 - Azure AI Foundry project with Foundry IQ configured
-- Azure CLI installed and logged in (`az login`)
+- Azure CLI installed and logged in (\`az login\`)
 
 ### Setup
 
-```bash
+\`\`\`bash
 # Clone the repo
 git clone https://github.com/durtymurty/research-mind.git
 cd research-mind
 
 # Install dependencies
 npm install
-```
+\`\`\`
 
 ### Environment Variables
 
-Create a `.env` file in the root:
+Create a \`.env\` file in the root:
 
-```
+\`\`\`
 VITE_AZURE_ENDPOINT=https://your-resource.services.ai.azure.com
 VITE_AZURE_PROJECT=your-project-name
 VITE_AZURE_API_KEY=your-api-key
 VITE_AGENT_NAME=research-mind
-```
+\`\`\`
 
 ### Run
 
-```bash
+\`\`\`bash
 # Terminal 1 — Frontend
 npm run dev
 
 # Terminal 2 — Backend
 node server.js
-```
+\`\`\`
 
 Open [http://localhost:5173](http://localhost:5173)
 
